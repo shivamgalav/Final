@@ -8,8 +8,8 @@ function Login() {
   return (
     <>  
         <div style={{display:'flex',justifyContent:'spaceEvenly',marginTop:"20%",flexDirection:'column',alignItems:'stretch',alignContent:'center',flexWrap:'wrap',gap:'20px'}}>
-            <Link to='/teacher'><button className='btn btn-primary'>Teacher</button></Link>
-            <Link to='/student'><button className='btn btn-primary'>Student</button></Link>
+            <Link to='/Final/teacher'><button className='btn btn-primary'>Teacher</button></Link>
+            <Link to='/Final/student'><button className='btn btn-primary'>Student</button></Link>
         </div>
     </>
   )
