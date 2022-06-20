@@ -42,20 +42,20 @@ function App() {
     <Router>
       <Routes>
         <Route path='/Final' element={<Login/>}/>
-        <Route exact path='/teacher' element={<Teacher data={data} forceUpdate={forceUpdate}/>}>
+        <Route exact path='/Final/teacher' element={<Teacher data={data} forceUpdate={forceUpdate}/>}>
           
         </Route>
             {courses.map(it=>(
-              <Route exact path={`/teacher/${it}`} element={<CreateForm data={data[`${it}`]} mainData={data} />}>
+              <Route exact path={`/Final/teacher/${it}`} element={<CreateForm data={data[`${it}`]} mainData={data} />}>
               </Route>
             ))}
-        <Route exact path='/student' element={<Student data={data} studentData = {studentData}/>}>
+        <Route exact path='/Final/student' element={<Student data={data} studentData = {studentData}/>}>
 
         </Route>
         {courses.map((it) => (
             <Route
               exact
-              path={`/student/${it}`}
+              path={`/Final/student/${it}`}
               element={
                 <ShowQuiz data={data[`${it}`]} mainData={data} studentData={studentData} />
               }

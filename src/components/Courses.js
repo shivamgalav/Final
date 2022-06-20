@@ -22,7 +22,7 @@ function Courses(props) {
       <ul className="list-group list-group-flush">
       <li className="list-group-item">
       <div class="input-group"  style={{marginBottom:"2%",marginLeft:"30%"}}>
-                <Link to={`/teacher/${it}`}><input
+                <Link to={`/Final/teacher/${it}`}><input
                   type="text"
                   class="form-control"
                   style={{ backgroundColor: "white",border:"none" }}

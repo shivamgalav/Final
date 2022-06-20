@@ -11,7 +11,7 @@ function ShowCourses(props) {
   return (
     <>
         {props.courses.map((it)=>(
-          <Link to={`/student/${it}`}>
+          <Link to={`/Final/student/${it}`}>
           <div className='card' style={{width:"18rem",margin:"auto",textAlign:"center",fontSize:"2rem"}}>{it}</div>
           </Link>
           ))}
