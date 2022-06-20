@@ -41,7 +41,7 @@ function App() {
     <>
     <Router>
       <Routes>
-        <Route path='/' element={<Login/>}/>
+        <Route path='/Final' element={<Login/>}/>
         <Route exact path='/teacher' element={<Teacher data={data} forceUpdate={forceUpdate}/>}>
           
         </Route>
